@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>Tus Contactos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form id="form">
+    <h2>Agenda de Contactos</h2>
+    <div class="input-container">
+      <label for="name-input">Nombre: </label>
+      <input type="text" id="name-input">
+      <p class="helper-form">
+        La primera letra tiene que ser mayuscula y tener un solo nombre.
+      </p>
+    </div>
+    <div class="input-container">
+      <label for="phone-input">Numero: </label>
+      <input type="text" id="phone-input">
+      <p class="helper-form">
+        Tiene que ser un numero venezolano valido.
+      </p>
+      <button id="form-btn" disabled type="submit">Agregar contacto</button>
+    </div>
+    
+  </form>
+  <ul id="list">
+  </ul>
+  <script src="ListaContactos.js"></script>
+</body>
+</html>
